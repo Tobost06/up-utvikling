@@ -4,7 +4,8 @@ html{
 
 #innhold {
     padding-left: 50px;   /*flytter alt litt ut på skjermen*/
-    padding-right: 50px;
+    color: #126b20;
+    text-shadow: 1px 1px black;
 }
 
 ul {
