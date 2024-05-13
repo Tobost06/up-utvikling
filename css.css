@@ -2,8 +2,8 @@ html{
     background-color:#a9cceb;
 }
 
-#innhold {
-    padding-left: 50px;
+.innhold {
+    padding-left: 50px;   /*flytter alt litt ut på skjermen*/
     padding-right: 50px;
 }
 
@@ -11,11 +11,11 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden;   /*gjemmer overflow*/
     background-color: #126b20;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: fixed;   /*fester nav-bar alltid til toppen av skjermen (selv ved scrolling)*/
+    top: 0;   /*fester nav-bar til toppen av skjermen*/
+    width: 100%;   /*gjør at nav-bar tar opp hele toppen av siden*/
 }
 
 .full-bleed {
@@ -24,21 +24,17 @@ ul {
 }
   
 li {
-     float: left;
+     float: left;   /*flytter nav-bar til venstre*/
 }
     
 li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: center;   /*koden til nav-bar-elementene*/
     padding: 14px 16px;
     text-decoration: none;
 }
     
 li a:hover:not(.active) {
-     background-color: #111;
-}
-   
-li a.active {
-     background-color: #477b82;
+     background-color: #111;   /*nav-bar-elementer får svar bakgrunn når musepekeren er over*/
 }
