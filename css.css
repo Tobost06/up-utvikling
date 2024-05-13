@@ -1,3 +1,8 @@
+#innhold {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
