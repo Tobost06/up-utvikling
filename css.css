@@ -1,10 +1,11 @@
 html{
-    background-color:#a9cceb;
+    background-color: white;
 }
 
 #innhold {
     padding-left: 50px;
-    padding-right: 50px;
+    color: #126b20;
+    text-shadow: 1px 1px black;
 }
 
 ul {
@@ -25,6 +26,7 @@ ul {
   
 li {
      float: left;
+     text-shadow: 1px 1px black;
 }
     
 li a {
