@@ -7,7 +7,7 @@ html{
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     overflow: hidden;   /*gjemmer overflow*/
@@ -18,7 +18,7 @@ ul {
 }
 
 .full-bleed {
-    box-shadow: 0 0 0 100vmax #126b20;   /*Fjerner den lille hvite firkanten ved siden av nav-baren*/
+    box-shadow: 0 0 0 100vmax #126b20;   /*Fjerner den lille hvite firekanten ved siden av nav-baren*/
     clip-path: inset(0 -100vmax);
 }
   
@@ -36,5 +36,5 @@ li a {
 }
     
 li a:hover:not(.active) {
-     background-color: #111;   /*nav-bar-elementer får svar bakgrunn når musepekeren er over*/
+     background-color: #111;   /*nav-bar-elementer får svart bakgrunn når musepekeren er over*/
 }
