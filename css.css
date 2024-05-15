@@ -3,7 +3,10 @@ html{
 }
 
 #innhold {
-    margin: 50px;   /*Får 50px avstand rundt innhold*/
+    padding: 50px;   /*Får 50px avstand rundt innhold*/
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
     border: 2px solid black;
 }
 
