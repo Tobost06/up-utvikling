@@ -3,7 +3,7 @@ html{
 }
 
 #innhold {
-    padding: 50px;   /*Får 50px avstand rundt innhold*/
+    margin: 50px;   /*Får 50px avstand rundt innhold*/
     border: 2px solid black;
 }
 
