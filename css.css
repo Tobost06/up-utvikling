@@ -4,8 +4,7 @@ html{
 
 #innhold {
     padding: 50px;   /*Får 50px avstand rundt innhold*/
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border: 2px solid black;
 }
 
 ul {
