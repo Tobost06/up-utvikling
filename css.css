@@ -3,7 +3,7 @@ html{
 }
 
 #innhold {
-    padding-left: 50px;   /*flytter alt litt ut på skjermen*/
+    padding: 50px;   /*Får 50px avstand rundt innhold*/
 }
 
 ul {
