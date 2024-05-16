@@ -27,10 +27,6 @@ ul {
     box-shadow: 0 0 0 100vmax #126b20;   /*Fjerner den lille hvite firkanten ved siden av nav-baren*/
     clip-path: inset(0 -100vmax);
 }
-
-.liste {
-    font-family: "Radio Canada Big", sans-serif;
-}
   
 li {
      float: left;   /*flytter alt litt ut på skjermen*/
