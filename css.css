@@ -86,3 +86,11 @@ summary {
 .innledning {
     text-align: center;
 }
+
+.punkt1 {
+    margin: 100px;
+    border: 10px;
+    border-color: #126b20;
+    color: #126b20;
+    text-align: center;
+}
