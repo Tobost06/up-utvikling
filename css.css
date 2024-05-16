@@ -27,6 +27,10 @@ ul {
     box-shadow: 0 0 0 100vmax #126b20;   /*Fjerner den lille hvite firkanten ved siden av nav-baren*/
     clip-path: inset(0 -100vmax);
 }
+
+li.liste {
+    text-shadow: none;
+}
   
 li {
      float: left;   /*flytter alt litt ut på skjermen*/
@@ -88,22 +92,12 @@ summary {
 }
 
 .punkt1 {
-    background-color: #126b20;
-    color: white;
-    margin: 50px;
-    padding: 20px;
-    margin-right: 700px;
-    text-align: center;
-    border-radius: 15px;
 }
 
 .punkt2 {
-    text-align: center;
+    text-align: right;
     margin: 50px;
-    margin-left: 700px;
+    border-radius: 50px;
     background-color: #126b20;
     color: white;
-    padding: 20px;
-    border-radius: 15px;
-    
 }
