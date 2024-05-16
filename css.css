@@ -87,10 +87,7 @@ summary {
     text-align: center;
 }
 
-.punkt1 {
-    margin: 100px;
-    border: 10px;
-    border-color: #126b20;
-    border-radius: 50px;
-    text-align: center;
+
+.punkt2 {
+    text-align: right;
 }
