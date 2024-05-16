@@ -98,13 +98,19 @@ summary {
     padding: 20px;
     margin-right: 700px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 .punkt2 {
     text-align: center;
     margin: 20px;
+    padding: 20px;
     margin-left: 700px;
     background-color: #126b20;
     color: white;
+    border-radius: 16px;
+}
+
+.logo {
+    text-align: center;
 }
