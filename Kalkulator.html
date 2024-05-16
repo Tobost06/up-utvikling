@@ -38,11 +38,21 @@
         </ul>
         <div id="innhold">
             <h1>CO2-utslippskalkulator for bil</h1>
-                <p>infotekst her</p>
+                <details><!--Kode hentet fra:
+                    https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9
+                    og har blitt modifisert av Tobias-->
+                    <summary>
+                        Hvordan beregner kalkulatoren utslipp i kg?
+                        <span class="ikon">⬇️</span>
+                    </summary>
+                    <img src="forklaring.png" id="forklaring">
+                  </details>
                     <br>
+
                     <p>Kjøredistanse (km):</p>
                     <input type="number" name="KDKM" oninput="co21()"><br>
                     <br>
+                    <hr>
                 
             <div>
                 <h2>Etter CO2-utslipp:</h2>
@@ -52,6 +62,7 @@
                     <input type="number" name="output1" disabled>
             </div>
             <br>
+            <hr>
 
             <div>
                 <h2>Etter forbruk per mil:</h2>

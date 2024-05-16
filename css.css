@@ -46,12 +46,37 @@ li a:hover:not(.active) {
 h1, h2, h3 {
     font-family: "Radio Canada Big", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 400;   /*Spesifiserer hvor tykk fonten skal være*/
+    font-style: normal;   /*Gjør den ikke-italic*/
 }
 
 p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 400;   /*Spesifiserer hvor tykk fonten skal være*/
+    font-style: normal;   /*Gjør den ikke-italic*/
+}
+
+
+
+#forklaring {
+    padding: 10px;   /*Får 50px avstand rundt innhold*/
+    margin-right: 500px;
+    border: 2px dotted #126b20;
+}
+
+/* Koden under er hentet fra: https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9
+og har blitt modifisert av Tobias*/
+span.ikon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;   /*Tidsrom for transition*/
+  margin-left: 10px;
+}
+
+details[open] summary span.ikon {
+  transform: rotate(180deg);   /*Snur ikonet 180 grader*/
+}
+
+summary {
+  display: flex;
 }
