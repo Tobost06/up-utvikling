@@ -88,12 +88,22 @@ summary {
 }
 
 .punkt1 {
+    background-color: #126b20;
+    color: white;
+    margin: 50px;
+    padding: 20px;
+    margin-right: 700px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .punkt2 {
-    text-align: right;
+    text-align: center;
     margin: 50px;
-    border-radius: 50px;
+    margin-left: 700px;
     background-color: #126b20;
     color: white;
+    padding: 20px;
+    border-radius: 15px;
+    
 }
