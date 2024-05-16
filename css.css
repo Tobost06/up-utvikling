@@ -6,7 +6,7 @@ html{
     padding: 50px;   /*Får 50px avstand rundt innhold*/
     margin-left: 100px;
     margin-right: 100px;
-    height: 100%;
+    min-height: 100%;
     border: 1px solid black;
 }
 
@@ -29,9 +29,10 @@ ul {
 }
 
 li.liste {
+    list-style: none;
     text-shadow: none;
     margin-bottom: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Radio Canada Big", sans-serif;
 }
   
 li {
