@@ -43,7 +43,7 @@ li a:hover:not(.active) {
      background-color: #111;   /*nav-bar-elementer får svart bakgrunn når musepekeren er over*/
 }
 
-h1 {
+h1, h2, h3 {
     font-family: "Radio Canada Big", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
