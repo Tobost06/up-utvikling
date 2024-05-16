@@ -2,35 +2,35 @@
 <html>
     <head>
         <title>Ukesprosjekt i Utvikling</title>
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="css.css"> <!--Importerer CSS-kode-->
         <script>
             function co21() {
-                let kmk = document.querySelector('input[name="KDKM"]').value;
+                let kmk = document.querySelector('input[name="KDKM"]').value; //Henter verdien fra input-feltet
                 let bpg = document.querySelector('input[name="BPKG"]').value;
-                let op1 = kmk * bpg / 1000;
-                document.querySelector('input[name="output1"]').value = op1;
+                let op1 = kmk * bpg / 1000; //regner ut
+                document.querySelector('input[name="output1"]').value = op1; //setter resultat av utregning som verdien i satt input-felt
             }
             function co22() {
                 let kmk = document.querySelector('input[name="KDKM"]').value;
-                let bpm = document.querySelector('input[name="BPM"]').value;
+                let bpm = document.querySelector('input[name="BPM"]').value; //Henter verdien fra input-feltet
                 let dst = document.querySelector('select[name="DST"]').value;
                 let usf;
                 
-                if (dst === "BS") {
-                    usf = 2.32; // utslippsfaktor for bensin
+                if (dst === "BS") { //if-funksjon som endrer resultat basert på valgt drivstoff-type
+                    usf = 2.32; //drivstoffbruk for bensin
                 } else if (dst === "DS") {
-                    usf = 2.66; // utslippsfaktor for diesel
+                    usf = 2.66; //drivstoffbruk for diesel
                 } else {
                     usf = 0;
                 }
-                let op2 = kmk * bpm * usf / 10;
-                document.querySelector('input[name="output2"]').value = op2; // Viser resultatet
+                let op2 = kmk * bpm * usf / 10; //regner ut
+                document.querySelector('input[name="output2"]').value = op2; //setter resultat av utregning som verdien i satt input-felt
             }
         </script>
     </head>
     
     <body>
-        <ul class="full-bleed">
+        <ul class="full-bleed"> <!--Nav-bar-->
             <li><a href="https://tobost06.github.io/up-utvikling/index.html">Hjemmeside</a></li>
             <lI><a href="https://tobost06.github.io/up-utvikling/Miljoavtrykk.html">Dataindustriens miljøavtrykk</a></lI>
             <li><a href="https://tobost06.github.io/up-utvikling/Tiltak.html">Tiltak for bærekraftige valg i IT-løsninger</a></li>
@@ -38,10 +38,10 @@
         </ul>
         <div id="innhold">
             <h1>CO2-utslippskalkulator for bil</h1>
-                <details><!--Kode hentet fra:
+                <details>   <!--Informasjonselement  -  Kode hentet fra:
                     https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9
                     og har blitt modifisert av Tobias-->
-                    <summary>
+                    <summary> <!--Kolapsabelt element som viser ekstra informasjon når trykket på-->
                         Hvordan beregner kalkulatoren utslipp i kg?
                         <span class="ikon">⬇️</span>
                     </summary>
@@ -59,7 +59,7 @@
                     <p>Bilens CO2-utslipp per km (gram):</p>
                     <input type="number" name="BPKG" oninput="co21()"><br>
                     <p>Utslipp i kg:</p>
-                    <input type="number" name="output1" disabled>
+                    <input type="number" name="output1" disabled> <!--Låst felt som brukes som output-->
             </div>
             <br>
             <hr>
@@ -69,16 +69,17 @@
                 <p>Bilens CO2-utslipp per mil:</p>
                     <input type="number" name="BPM" oninput="co22()"><br>
                 <p>Drivstoff:</p>
-                <select name="DST" onchange="co22()">
+                <select name="DST" onchange="co22()"> <!--Dropdown-element der man velger drivstoff-type-->
                     <option value="BS">Bensin</option>
                     <option value="DS">Diesel</option>
                 </select><br>
                 <p>Utslipp i kg:</p>
-                    <input type="number" name="output2" disabled>
+                    <input type="number" name="output2" disabled> <!--Låst felt som brukes som output-->
             </div>
         </div>
     </body>
 </html>
 <style>
+    /*Importerer fontene som brukes på siden*/
     @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital@0;1&family=Roboto&display=swap');
 </style>
