@@ -92,6 +92,8 @@ summary {
 
 .punkt2 {
     text-align: right;
-    margin: 100px;
+    margin: 50px;
+    border-radius: 50px;
     background-color: #126b20;
+    color: white;
 }
