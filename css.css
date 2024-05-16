@@ -63,7 +63,7 @@ p {
 #forklaring {
     padding: 10px;   /*Får 50px avstand rundt innhold*/
     margin-right: 500px;
-    border: 2px dotted #126b20;
+    border: 1px solid black;
 }
 
 /* Koden under er hentet fra: https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9
