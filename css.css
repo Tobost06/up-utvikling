@@ -30,6 +30,8 @@ ul {
 
 li.liste {
     text-shadow: none;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
 }
   
 li {
@@ -92,12 +94,19 @@ summary {
 }
 
 .punkt1 {
+    background-color: #126b20;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    margin-right: 700px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .punkt2 {
-    text-align: right;
-    margin: 50px;
-    border-radius: 50px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 700px;
     background-color: #126b20;
     color: white;
 }
