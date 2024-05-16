@@ -82,3 +82,10 @@ details[open] summary span.ikon {
 summary {
   display: flex;
 }
+
+.punkt1 {
+    padding: 10px;
+    margin: 50px;
+    border: #126b20;
+    border-radius: 10px;
+}
