@@ -27,6 +27,12 @@ ul {
     box-shadow: 0 0 0 100vmax #126b20;   /*Fjerner den lille hvite firkanten ved siden av nav-baren*/
     clip-path: inset(0 -100vmax);
 }
+
+li.liste {
+    text-shadow: none;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
   
 li {
      float: left;   /*flytter alt litt ut på skjermen*/
@@ -103,7 +109,4 @@ summary {
     margin-left: 700px;
     background-color: #126b20;
     color: white;
-    padding: 20px;
-    border-radius: 15px;
-    
 }
