@@ -28,10 +28,7 @@ ul {
     clip-path: inset(0 -100vmax);
 }
 
-li.liste {
-    list-style: none;
-    text-shadow: none;
-    margin-bottom: 20px;
+.liste {
     font-family: "Radio Canada Big", sans-serif;
 }
   
