@@ -3,6 +3,30 @@
     <head>
         <title>Ukesprosjekt i Utvikling</title>
         <link rel="stylesheet" href="css.css">
+        <script>
+            function co21() {
+                let kmk = document.querySelector('input[name="KDKM"]').value;
+                let bpg = document.querySelector('input[name="BPKG"]').value;
+                let op1 = kmk * bpg / 1000;
+                document.querySelector('input[name="output1"]').value = op1;
+            }
+            function co22() {
+                let kmk = document.querySelector('input[name="KDKM"]').value;
+                let bpm = document.querySelector('input[name="BPM"]').value;
+                let dst = document.querySelector('select[name="DST"]').value;
+                let usf;
+                
+                if (dst === "BS") {
+                    usf = 2.32; // utslippsfaktor for bensin
+                } else if (dst === "DS") {
+                    usf = 2.66; // utslippsfaktor for diesel
+                } else {
+                    usf = 0;
+                }
+                let op2 = kmk * bpm * usf / 10;
+                document.querySelector('input[name="output2"]').value = op2; // Viser resultatet
+            }
+        </script>
     </head>
     
     <body>
@@ -17,11 +41,30 @@
                 <p>infotekst her</p>
                     <br>
                     <p>Kjøredistanse (km):</p>
-                    <input type="number" name="KDKM"><br>
+                    <input type="number" name="KDKM" oninput="co21()"><br>
                     <br>
+                
+            <div>
                 <h2>Etter CO2-utslipp:</h2>
                     <p>Bilens CO2-utslipp per km (gram):</p>
-                    <input type="number" name="BPKG"><br>
+                    <input type="number" name="BPKG" oninput="co21()"><br>
+                    <p>Utslipp i kg:</p>
+                    <input type="number" name="output1" disabled>
+            </div>
+            <br>
+
+            <div>
+                <h2>Etter forbruk per mil:</h2>
+                <p>Bilens CO2-utslipp per km (gram):</p>
+                    <input type="number" name="BPM" oninput="co22()"><br>
+                <p>Drivstoff:</p>
+                <select name="DST" onchange="co22()">
+                    <option value="BS">Bensin</option>
+                    <option value="DS">Diesel</option>
+                </select><br>
+                <p>Utslipp i kg:</p>
+                    <input type="number" name="output2" disabled>
+            </div>
         </div>
     </body>
 </html>
