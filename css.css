@@ -87,7 +87,11 @@ summary {
     text-align: center;
 }
 
+.punkt1 {
+}
 
 .punkt2 {
     text-align: right;
+    margin: 100px;
+    background-color: #126b20;
 }
