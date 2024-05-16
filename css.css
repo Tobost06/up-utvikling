@@ -87,28 +87,28 @@ summary {
     text-align: center;
 }
 
-.punkt1 {
+.punkt1 { /*lager boksene 1,3 og 5 på miljøavtrykk*/
     background-color: #126b20;
-    color: white;
+    color: white; /*gjør skriften hvit*/
     margin: 20px;
     padding: 20px;
-    margin-right: 700px;
+    margin-right: 700px; /*dytter boksen til venstre siden*/
     text-align: center;
-    border-radius: 16px;
+    border-radius: 16px; /*runder av kantene på boksen*/
 }
 
-.punkt2 {
+.punkt2 { /*lager boks 2 og 4 på miljøavtrykk*/
     text-align: center;
     margin: 20px;
     padding: 20px;
-    margin-left: 700px;
+    margin-left: 700px; /* dytter boksen til høyre siden av siden*/
     background-color: #126b20;
     color: white;
     border-radius: 16px;
 }
 
 .logo {
-    text-align: center;
+    text-align: center; /* gjør slik at bildet er sentret på siden*/
 }
 
 
