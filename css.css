@@ -14,10 +14,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid black;
     overflow: hidden;   /*gjemmer overflow*/
     background-color: #126b20;
     position: fixed;   /*fester nav-bar alltid til toppen av skjermen (selv ved scrolling)*/
     top: 0;   /*fester nav-bar til toppen av skjermen*/
+    left: 0;
     width: 100%;   /*gjør at nav-bar tar opp hele toppen av siden*/
 }
 
